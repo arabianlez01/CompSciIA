@@ -23,11 +23,7 @@ public class Login extends JFrame{
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                JPasswordField = "5726";
-                if (userPIN.equals(JPasswordField)){
 
-                }
-                ApplicantsInfo applicantsInfo = new ApplicantsInfo();
             }
         });
     }

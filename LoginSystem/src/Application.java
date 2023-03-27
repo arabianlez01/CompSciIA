@@ -29,9 +29,12 @@ public class Application extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 ApplicantsInfo applicantsInfo = new ApplicantsInfo();
+                ApplicantFirstandLastName.getText();
             }
         });
     }
+
+    //create list of applicants info
 
     public static void main(String[] args) {
         Application application = new Application();
