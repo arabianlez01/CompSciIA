@@ -22,14 +22,7 @@
         </constraints>
         <properties/>
         <border type="none"/>
-        <children>
-          <component id="3121e" class="javax.swing.JTextArea" binding="ApplicantInfo">
-            <constraints/>
-            <properties>
-              <text value=""/>
-            </properties>
-          </component>
-        </children>
+        <children/>
       </scrollpane>
       <component id="3c59f" class="javax.swing.JScrollBar" binding="scrollBar">
         <constraints>

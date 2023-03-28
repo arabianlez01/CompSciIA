@@ -14,6 +14,7 @@ public class Application extends JFrame {
     private JLabel NumOfPets;
     private JTextField NumberOfPets;
     private JButton Submit;
+    private Applicant applicant;
 
     public Application() {
         setContentPane(panel);
@@ -28,8 +29,9 @@ public class Application extends JFrame {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                ApplicantsInfo applicantsInfo = new ApplicantsInfo();
                 ApplicantFirstandLastName.getText();
+                applicant = new Applicant(ApplicantFirstandLastName.getText(), NumOfAdults.getText(), NumberOfMinors.getText(), NumberOfPets.getText());
+                ApplicantsInfo applicationInformation = new ApplicantsInfo(applicant);
             }
         });
     }

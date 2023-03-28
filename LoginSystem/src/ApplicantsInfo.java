@@ -5,14 +5,16 @@ public class ApplicantsInfo extends JFrame {
     private JLabel Applicants;
     private JScrollBar scrollBar;
     private JScrollPane ApplicantInfoScroll;
-    private JTextArea ApplicantInfo;
+    private Applicant applicant;
 
-    public ApplicantsInfo(){
+    public ApplicantsInfo(Applicant applicant){
+        this.applicant = applicant;
         setContentPane(panel);
         setSize(1000, 1000);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
     }
 
-    //c
+    //set the Jtext fields or jlabels and call the get applican method
+
 }
