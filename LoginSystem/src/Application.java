@@ -9,7 +9,7 @@ public class Application extends JFrame {
     private JLabel firstAndLastName;
     private JTextField numberOfAdults;
     private JLabel numOfAdults;
-    private JTextField NumberOfMinors;
+    private JTextField numberOfMinors;
     private JLabel numOfMinors;
     private JTextField numberOfPets;
     private JLabel numOfPets;
@@ -29,7 +29,7 @@ public class Application extends JFrame {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                applicant = new Applicant(applicantFirstAndLastName.getText(), numberOfAdults.getText(), NumberOfMinors.getText(), numberOfPets.getText());
+                applicant = new Applicant(applicantFirstAndLastName.getText(), numberOfAdults.getText(), numberOfMinors.getText(), numberOfPets.getText());
                 ApplicantsInfo.setApplicant(applicant);
             }
         });
