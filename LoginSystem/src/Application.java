@@ -7,8 +7,8 @@ public class Application extends JFrame {
     private JLabel Application;
     private JTextField ApplicantFirstAndLastName;
     private JLabel FirstAndLastName;
-    private JTextField NumberOfAdult;
-    private JLabel NumberOfAdults;
+    private JTextField NumberOfAdults;
+    private JLabel NumOfAdults;
     private JLabel NumOfMinors;
     private JTextField NumberOfMinors;
     private JLabel NumOfPets;
@@ -30,7 +30,7 @@ public class Application extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 applicant = new Applicant(ApplicantFirstAndLastName.getText(), NumberOfAdults.getText(), NumberOfMinors.getText(), NumberOfPets.getText());
-                applicantsInfo.setApplicant(applicant);
+                ApplicantsInfo.setApplicant(applicant);
             }
         });
     }

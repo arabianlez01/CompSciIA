@@ -26,5 +26,4 @@ public class Applicant {
     public String getNumberOfPets() {
         return numberOfPets;
     }
-
 }
