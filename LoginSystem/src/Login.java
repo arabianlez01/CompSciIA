@@ -6,14 +6,13 @@ import java.awt.event.ActionListener;
  * class login for login page
  */
 public class Login extends JFrame{
-
     private JPasswordField PIN;
     private JPanel panel;
     private JButton login;
 
     public Login() {
         setContentPane(panel);
-        setSize(1000, 1000);
+        setSize(700, 700);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         login.addActionListener(new ActionListener() {
@@ -23,7 +22,12 @@ public class Login extends JFrame{
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                
+                String correctPin = "5726";
+                if (PIN.getText().compareTo(correctPin) == 0){
+                    ApplicantsInfo applicantsInfo = new ApplicantsInfo();
+                } else {
+                    Login login = new Login();
+                }
             }
         });
     }

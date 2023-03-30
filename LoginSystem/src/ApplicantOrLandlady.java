@@ -10,7 +10,7 @@ public class ApplicantOrLandlady extends JFrame {
 
     public ApplicantOrLandlady() {
         setContentPane(panel);
-        setSize(1000, 1000);
+        setSize(700, 700);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         Applicant.addActionListener(new ActionListener() {
@@ -34,10 +34,6 @@ public class ApplicantOrLandlady extends JFrame {
                 Login loginForm = new Login();
             }
         });
-    }
-
-    private void createUIComponents() {
-        // TODO: place custom component creation code here
     }
 
     public static void main(String[] args) {

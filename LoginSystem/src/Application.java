@@ -15,10 +15,11 @@ public class Application extends JFrame {
     private JTextField NumberOfPets;
     private JButton Submit;
     private Applicant applicant;
+    private ApplicantsInfo applicantsInfo;
 
     public Application() {
         setContentPane(panel);
-        setSize(1000, 1000);
+        setSize(700, 700);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         Submit.addActionListener(new ActionListener() {
@@ -29,14 +30,11 @@ public class Application extends JFrame {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                ApplicantFirstandLastName.getText();
                 applicant = new Applicant(ApplicantFirstandLastName.getText(), NumOfAdults.getText(), NumberOfMinors.getText(), NumberOfPets.getText());
-                ApplicantsInfo applicationInformation = new ApplicantsInfo(applicant);
+                applicantsInfo.setApplicant(applicant);
             }
         });
     }
-
-    //create list of applicants info
 
     public static void main(String[] args) {
         Application application = new Application();
