@@ -5,10 +5,10 @@ import java.awt.event.ActionListener;
 public class Application extends JFrame {
     private JPanel panel;
     private JLabel Application;
-    private JTextField ApplicantFirstandLastName;
-    private JLabel FirstandLastName;
+    private JTextField ApplicantFirstAndLastName;
+    private JLabel FirstAndLastName;
     private JTextField NumberOfAdult;
-    private JLabel NumOfAdults;
+    private JLabel NumberOfAdults;
     private JLabel NumOfMinors;
     private JTextField NumberOfMinors;
     private JLabel NumOfPets;
@@ -25,12 +25,11 @@ public class Application extends JFrame {
         Submit.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
-             *
              * @param e the event to be processed
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                applicant = new Applicant(ApplicantFirstandLastName.getText(), NumOfAdults.getText(), NumberOfMinors.getText(), NumberOfPets.getText());
+                applicant = new Applicant(ApplicantFirstAndLastName.getText(), NumberOfAdults.getText(), NumberOfMinors.getText(), NumberOfPets.getText());
                 applicantsInfo.setApplicant(applicant);
             }
         });
