@@ -4,15 +4,15 @@ import java.awt.event.ActionListener;
 
 public class Application extends JFrame {
     private JPanel panel;
-    private JLabel Application;
-    private JTextField ApplicantFirstAndLastName;
-    private JLabel FirstAndLastName;
-    private JTextField NumberOfAdults;
-    private JLabel NumOfAdults;
-    private JLabel NumOfMinors;
+    private JLabel application;
+    private JTextField applicantFirstAndLastName;
+    private JLabel firstAndLastName;
+    private JTextField numberOfAdults;
+    private JLabel numOfAdults;
     private JTextField NumberOfMinors;
-    private JLabel NumOfPets;
-    private JTextField NumberOfPets;
+    private JLabel numOfMinors;
+    private JTextField numberOfPets;
+    private JLabel numOfPets;
     private JButton Submit;
     private Applicant applicant;
     private ApplicantsInfo applicantsInfo;
@@ -29,7 +29,7 @@ public class Application extends JFrame {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                applicant = new Applicant(ApplicantFirstAndLastName.getText(), NumberOfAdults.getText(), NumberOfMinors.getText(), NumberOfPets.getText());
+                applicant = new Applicant(applicantFirstAndLastName.getText(), numberOfAdults.getText(), NumberOfMinors.getText(), numberOfPets.getText());
                 ApplicantsInfo.setApplicant(applicant);
             }
         });
